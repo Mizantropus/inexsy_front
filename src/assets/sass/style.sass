@@ -1,0 +1,83 @@
+﻿@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap')
+
+html
+  display: block
+  
+body
+  margin: auto auto auto 0
+  margin-bottom: 0 !important
+
+*
+  margin: 0
+  outline: none
+  box-sizing: border-box
+  padding: 0
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+  font-display: swap
+  color: #888
+  font-size: 16px
+
+#app 
+  font-family: Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: left
+  color: #2c3e50
+  h1
+    font-size: 33px
+  h3
+    font-size: 23px
+    font-weight: 500
+
+li
+  list-style-type: none
+
+.v-application a
+  cursor: pointer
+  color: #638677
+  &:hover
+    color: #638677
+    text-decoration: underline
+
+button
+  user-select: none
+  cursor: pointer
+
+*, *:before, *:after
+  box-sizing: border-box
+  margin: 0
+  
+.pointer
+  cursor: pointer
+  
+@mixin media($bp-size)
+  @media (max-width: $bp-size + px)
+    @content
+
+@mixin media_min($bp-size)
+  @media (min-width: $bp-size + 0.1 + px)
+    @content
+
+.logo
+  font-family: 'Yeseva One', cursive
+
+.required
+  color: red
+
+.container 
+  padding-top: 0 !important
+  padding-bottom: 0 !important
+  max-width: 1185px !important
+
+.width-100
+  width: 100%
+
+.v-text-field__details
+  padding-left: 0 !important
+
+.v-btn--fab.v-size--default .v-icon, .v-btn--fab.v-size--small .v-icon, .v-btn--icon.v-size--default .v-icon, .v-btn--icon.v-size--small .v-icon
+  font-size: 18px !important
+
+.pb-43
+  padding-bottom: 43px !important
