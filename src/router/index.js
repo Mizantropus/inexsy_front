@@ -6,6 +6,15 @@ import Submit from '../views/Submit.vue'
 Vue.use(VueRouter)
 
   const routes = [
+  { 
+    path: '/404', 
+    name: '404', 
+    component: NotFound, 
+  }, 
+  { 
+    path: '*', 
+    redirect: '/404' 
+  },
   {
     path: '/',
     name: 'Home',
