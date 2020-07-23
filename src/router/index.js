@@ -2,18 +2,14 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Submit from '../views/Submit.vue'
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   { 
-    path: '/404', 
-    name: '404', 
-    component: NotFound, 
-  }, 
-  { 
     path: '*', 
-    redirect: '/404' 
+    component: NotFound,  
   },
   {
     path: '/',
