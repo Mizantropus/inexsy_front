@@ -5,8 +5,8 @@
         .headline_left
           .logo.headline_logo Inexsy
         .headline_right
-          router-link.pointer.pr-2(to="/") Sign in
-          router-link.pointer.pr-3(to="/") Log in
+          router-link.pointer.pr-2(to="/registration/") Sign in
+          router-link.pointer.pr-3(to="/login/") Log in
           router-link.pointer.search_icon_wrap(to="/")
             i.fas.fa-search
     .header
